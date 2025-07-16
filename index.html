@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenis Osiris - Tienda Oficial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #001f3f;
+            color: #fff;
+        }
+
+        .topbar {
+            background: #000;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 0.4rem;
+            color: #ccc;
+        }
+
+        header {
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-weight: 600;
+        }
+
+            .nav-links a {
+                color: #000;
+                text-decoration: none;
+            }
+
+                .nav-links a:hover {
+                    text-decoration: underline;
+                }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            background: url('imagenes/osiris.jpg') center center / cover no-repeat fixed;
+        }
+
+            .hero::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 0;
+            }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+            .hero-content h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-content p {
+                max-width: 600px;
+                margin: 0 auto 2rem;
+                font-size: 1.1rem;
+            }
+
+            .hero-content a {
+                background-color: #fff;
+                color: #000;
+                padding: 0.8rem 2rem;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+        footer {
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 2rem;
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-column {
+            flex: 1 1 200px;
+            margin: 1rem;
+        }
+
+            .footer-column h4 {
+                font-weight: 800;
+                margin-bottom: 1rem;
+            }
+
+            .footer-column ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                .footer-column ul li {
+                    margin-bottom: 0.5rem;
+                }
+
+                    .footer-column ul li a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                        .footer-column ul li a:hover {
+                            text-decoration: underline;
+                        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .footer-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        ENVÍO GRATUITO A PARTIR DE MXN$2700
+    </div>
+
+    <header>
+        <img src="imagenes/osiris-logo.png" alt="Logo Osiris" width="120">
+        <nav class="nav-links">
+            <a href="hombres.html">HOMBRE</a>
+            <a href="mujer.html">MUJER</a>
+            <a href="outlet.html">OUTLET</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tenis Osiris</h1>
+            <p>Desde 1999, los Osiris D3 han sido iconos del skate y la cultura urbana. ¡Compra ahora en la tienda oficial de México!</p>
+            <a href="hombres.html">COMPRAR AHORA</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>SIGN UP</h4>
+                <input type="email" placeholder="Email Address" style="padding: 0.5rem; width: 100%; max-width: 250px;" />
+            </div>
+            <div class="footer-column">
+                <h4>COLLECTIONS</h4>
+                <ul>
+                    <li><a href="#">Osiris D3</a></li>
+                    <li><a href="#">Osiris Peril</a></li>
+                    <li><a href="#">Osiris Rize Ultra</a></li>
+                    <li><a href="#">Osiris Troma</a></li>
+                    <li><a href="#">Osiris Flex</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">Condiciones Generales</a></li>
+                    <li><a href="#">Declaración De Privacidad</a></li>
+                    <li><a href="#">Contactar Con Nosotros</a></li>
+                    <li><a href="#">Mapa Web</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright © 2025 ledgaashop Powered by ledgaashop.me
+        </div>
+    </footer>
+
+</body>
+</html>

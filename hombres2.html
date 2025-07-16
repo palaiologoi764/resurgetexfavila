@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Osiris Hombre - Página 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #001f3f; color: #fff; font-family: 'Inter', sans-serif; padding: 2rem; }
+    header { background-color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+    header nav a { color: #000; text-decoration: none; margin-left: 1rem; font-weight: 600; }
+    h1 { text-align: center; margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card { background: white; color: black; border-radius: 10px; overflow: hidden; box-shadow: 0 0 15px rgba(0,0,0,0.2); }
+    .card img { width: 100%; height: 250px; object-fit: cover; }
+    .card-content { padding: 1rem; }
+    .card-content h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .price { color: #0074D9; font-weight: bold; }
+    .pagination { text-align: center; margin-top: 3rem; }
+    .pagination a { color: white; background: #003366; padding: 0.5rem 0.8rem; margin: 0 0.2rem; text-decoration: none; border-radius: 5px; }
+    .pagination a.active { background: #00aced; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/images/osiris-logo.png" alt="Logo Osiris" width="120">
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="#">MUJER</a>
+    </nav>
+  </header>
+
+  <h1>Más modelos Osiris - Página 2</h1>
+
+  <section class="grid">
+    <div class="card">
+      <img src="/images/osiris5.jpg" alt="Osiris NYC83 Gris">
+      <div class="card-content">
+        <h2>Tenis Osiris NYC83 Gris/Negros</h2>
+        <p class="price">MXN1,250</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/osiris6.jpg" alt="Osiris D3 Classic">
+      <div class="card-content">
+        <h2>Tenis Osiris D3 Classic Blancos</h2>
+        <p class="price">MXN1,390</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/osiris7.jpg" alt="Osiris Bronx">
+      <div class="card-content">
+        <h2>Tenis Osiris Bronx Verdes</h2>
+        <p class="price">MXN1,180</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/osiris8.jpg" alt="Osiris Protocol">
+      <div class="card-content">
+        <h2>Tenis Osiris Protocol Rojo/Negro</h2>
+        <p class="price">MXN1,040</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pagination">
+    <a href="hombres.html">1</a>
+    <a href="hombres2.html" class="active">2</a>
+    <a href="hombres3.html">3</a>
+    <a href="hombres4.html">4</a>
+    <a href="hombres5.html">5</a>
+  </div>
+</body>
+</html>
