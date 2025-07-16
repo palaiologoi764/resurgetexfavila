@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar Tenis Osiris Hombre | Tenis Osiris Mujer | Tenis Osiris México</title>
+  <meta name="keywords" content="Tenis Osiris Hombre, Tenis Osiris Mujer, Osiris D3 2001, Osiris México, Tienda Osiris, Comprar Osiris Online, Osiris Shoes, Tenis Osiris Baratos, Tenis Skate Osiris, Tienda Oficial Osiris, Osiris Clon, Osiris D3 OG" />
+  <meta name="description" content="Tienda Osiris en México: Compra Tenis Osiris Hombre, Tenis Osiris Mujer, Osiris D3 2001, Clone, NYC 83 y más. Envío gratis desde MXN$2700. Outlet hasta 60% OFF. ¡Tenis Osiris originales y baratos!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    html, body { height: 100%; }
+    body { background-color: #001f3f; color: #fff; display: flex; flex-direction: column; min-height: 100vh; }
+    .topbar { background: #000; text-align: center; font-size: 0.9rem; padding: 0.4rem; color: #ccc; }
+    header { background-color: #fff; color: #000; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 1px solid #ccc; position: relative; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; font-weight: 600; }
+    .nav-links a { color: #000; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; }
+    .nav-links a:hover { text-decoration: underline; }
+    .main-content { display: flex; flex-grow: 1; overflow-y: auto; }
+    .filters { background-color: #fff; color: #000; padding: 1rem; width: 250px; margin: 2rem; border-radius: 10px; height: fit-content; position: sticky; top: 1rem; }
+    .filters label { display: block; margin: 0.5rem 0; }
+    .grid-container { flex: 1; overflow-y: auto; padding: 2rem; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+    .card { width: 250px; background-color: #fff; color: #000; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.3); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 250px; object-fit: cover; }
+    .card-content { padding: 1rem; }
+    .card-content h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .price { font-weight: bold; color: #0074D9; }
+    .add-to-cart { margin-top: 1rem; background-color: #0074D9; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; width: 100%; font-weight: bold; }
+    #cart { position: fixed; top: 1rem; right: 1rem; background: #fff; color: #000; padding: 1rem; border-radius: 10px; width: 250px; max-height: 400px; overflow-y: auto; z-index: 1000; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+    #cart h3 { margin-bottom: 1rem; }
+    #cart ul { list-style: none; padding: 0; margin: 0; }
+    #cart ul li { margin-bottom: 0.5rem; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+    footer { background-color: #f5f5f5; color: #000; padding: 2rem; width: 100%; }
+    .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; }
+    .footer-column { flex: 1 1 200px; margin: 1rem; }
+    .footer-column h4 { font-weight: 800; margin-bottom: 1rem; }
+    .footer-column ul { list-style: none; padding: 0; }
+    .footer-column ul li { margin-bottom: 0.5rem; }
+    .footer-column ul li a { text-decoration: none; color: #000; }
+    .footer-column ul li a:hover { text-decoration: underline; }
+    .footer-bottom { text-align: center; font-size: 0.8rem; color: #555; margin-top: 2rem; }
+    @media (max-width: 768px) { .main-content { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">ENVÍO GRATIS EN TENIS OSIRIS HOMBRE Y TENIS OSIRIS MUJER A PARTIR DE MXN$2700</div>
+  <header>
+    <img src="imagenes/osiris-logo.png" alt="Logo Tenis Osiris México" width="120">
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#">Tienda Osiris</a>
+      <a href="#">Outlet Osiris</a>
+      <a href="#">Tenis Hombre</a>
+      <a href="#">Tenis Mujer</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+  <div id="cart">
+    <h3>Carrito</h3>
+    <ul id="cart-items"></ul>
+  </div>
+  <main class="main-content">
+    <div class="filters">
+      <label><input type="checkbox" value="hombre"> Tenis Osiris Hombre</label>
+      <label><input type="checkbox" value="mujer"> Tenis Osiris Mujer</label>
+      <label><input type="checkbox" value="d3"> D3 2001 OG</label>
+      <label><input type="checkbox" value="clone"> Osiris Clone</label>
+      <label><input type="checkbox" value="bentley"> Bentley VLC</label>
+      <label><input type="checkbox" value="negro"> Color Negro</label>
+      <label><input type="checkbox" value="blanco"> Color Blanco</label>
+      <label><input type="checkbox" value="rojo"> Color Rojo</label>
+    </div>
+    <div class="grid-container">
+      <div class="grid">
+        <div class="card" data-tags="hombre bentley negro">
+          <img src="imagenes/tenis1.jpg" alt="Tenis Osiris Hombre Bentley VLC">
+          <div class="card-content">
+            <h2>Tenis Osiris Hombre Bentley VLC</h2>
+            <p class="price">MXN$728</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-tags="mujer clone rosa blanco">
+          <img src="imagenes/tenis2.jpg" alt="Tenis Osiris Mujer Clone Rosas">
+          <div class="card-content">
+            <h2>Tenis Osiris Mujer Clone Rosas</h2>
+            <p class="price">MXN$1102</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-tags="hombre d3 og negro rojo">
+          <img src="imagenes/tenis3.jpg" alt="Tenis Osiris Hombre D3 OG">
+          <div class="card-content">
+            <h2>Tenis Osiris Hombre D3 OG</h2>
+            <p class="price">MXN$1312</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-tags="mujer blanco classic clone">
+          <img src="imagenes/tenis4.jpg" alt="Tenis Osiris Mujer Blanco Classic">
+          <div class="card-content">
+            <h2>Tenis Osiris Mujer Blanco Classic</h2>
+            <p class="price">MXN$999</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>RECIBE OFERTAS</h4>
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="footer-column">
+        <h4>COLECCIONES</h4>
+        <ul>
+          <li><a href="#">Osiris D3 2001</a></li>
+          <li><a href="#">Osiris Clone</a></li>
+          <li><a href="#">Osiris Peril</a></li>
+          <li><a href="#">Osiris NYC 83</a></li>
+          <li><a href="#">Bentley VLC</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>SOPORTE</h4>
+        <ul>
+          <li><a href="#">Política de envíos</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#">Mapa del sitio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Copyright © 2025 Tienda Osiris México | ledgaashop.me</div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('.filters input[type="checkbox"]');
+      function filtrarProductos() {
+        const activos = Array.from(checkboxes).filter(c => c.checked).map(c => c.value.toLowerCase());
+        document.querySelectorAll('.card').forEach(card => {
+          const tags = card.getAttribute('data-tags');
+          const visible = activos.length === 0 || activos.some(f => tags.includes(f));
+          card.style.display = visible ? 'block' : 'none';
+        });
+      }
+      checkboxes.forEach(c => c.addEventListener('change', filtrarProductos));
+      filtrarProductos();
+      document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', (e) => {
+          const productName = e.target.closest('.card').querySelector('h2').textContent;
+          const cart = document.getElementById('cart-items');
+          const li = document.createElement('li');
+          li.textContent = productName;
+          li.classList.add('animate__animated', 'animate__fadeIn');
+          cart.appendChild(li);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
